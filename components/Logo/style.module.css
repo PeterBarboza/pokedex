@@ -1,0 +1,12 @@
+.imgBox {
+  height: 90px;
+  width: 120px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  height: 80px;
+}

@@ -1,0 +1,10 @@
+.layout {
+  width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+
+  display: grid;
+  grid-template-rows: 90px minmax(100vh, auto) 225px;
+
+  background-color: #f3f3f3;
+}

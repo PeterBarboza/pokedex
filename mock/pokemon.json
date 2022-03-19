@@ -1,0 +1,15 @@
+{
+  "name": "Example",
+  "id": "150",
+  "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
+  "type1": "bug",
+  "type2": "electric",
+  "status": {
+    "hp": 45,
+    "atk": 80,
+    "def": 30,
+    "spAtk": 60,
+    "spDef": 45,
+    "speed": 50
+  }
+}
