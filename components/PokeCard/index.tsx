@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import style from './style.module.css'
 
 type pokeCardProps = {
@@ -23,7 +25,7 @@ export function PokeCard({
 }: pokeCardProps) {
   return (
     <div className={style.pokeCard}>
-      <img className={style.img} src={img} alt={name} />
+      <Image className={style.img} width="140px" height="140px" layout="intrinsic" src={img} alt={name} />
       <div className={style.pokemonData}>
         <div className={style.pokemonIdAndName}>
 

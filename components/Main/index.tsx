@@ -1,7 +1,7 @@
 import { FormEvent, ReactNode, useState } from 'react'
 import axios from 'axios'
 
-import { IFinalPokemonData, IFinalPokemonRawData } from '../../pages/IPokemon'
+import { IFinalPokemonData, IFinalPokemonRawData } from '../../types/IPokemon'
 
 import { PokeCard } from '../PokeCard'
 import { MultiplyPokemonsBox } from '../MultiplyPokemonsBox'
@@ -65,9 +65,7 @@ export function Main(props: mainProps) {
         {pokemonsList.length > 0 ?
           pokeCardsData
           :
-          <MultiplyPokemonsBox>
-            {props.children}
-          </MultiplyPokemonsBox>
+          props.children
         }
       </div>
     </main>

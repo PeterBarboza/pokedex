@@ -1,6 +1,6 @@
 import { getPokemonDetails } from './getPokemonsApiData'
 
-import { IFinalPokemonData, IFinalPokemonRawData } from '../pages/IPokemon'
+import { IFinalPokemonData, IFinalPokemonRawData } from '../types/IPokemon'
 
 export async function setFinalPokemonData(finalPokemonRawArr: any[]) {
 

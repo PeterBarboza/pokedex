@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import Head from 'next/head'
 
 import type { NextPage } from 'next'
-import { IFinalPokemonData } from './IPokemon'
+import { IFinalPokemonData } from '../types/IPokemon'
 
 import { Layout } from '../components/Layout'
 import { Header } from '../components/Header'
@@ -10,6 +10,7 @@ import { Main } from '../components/Main'
 import { Footer } from '../components/Footer'
 import { PokeCard } from '../components/PokeCard'
 import { Loader } from '../components/Loader'
+import { MultiplyPokemonsBox } from '../components/MultiplyPokemonsBox'
 import { GetMoreButton } from '../components/GetMoreButton'
 
 import { setPokemonTypeColor } from '../utils/setPokemonTypeColor'
@@ -34,6 +35,7 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     getPokemons()
+    //eslint-disable-next-line
   }, [])
 
   const pokeCardsData = pokemonsList.map((pokemon) => {
@@ -64,7 +66,9 @@ const Home: NextPage = () => {
         {
           pokeCardsData.length > 0 ?
             <>
-              {pokeCardsData}
+              <MultiplyPokemonsBox>
+                {pokeCardsData}
+              </MultiplyPokemonsBox>
               <GetMoreButton onClick={() => getPokemons()} isLoading={pokeCardsData} />
             </>
             :

@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-import { IFirstPokemonData, IFinalPokemonRawData, IFirstReqData } from '../pages/IPokemon'
+import { IFirstPokemonData, IFinalPokemonRawData, IFirstReqData } from '../types/IPokemon'
 
 async function getTwentyPokemons(url: string) {
   const { data } = await axios.get(url)
