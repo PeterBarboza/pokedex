@@ -25,13 +25,18 @@ export function Main(props: mainProps) {
 
     if (query.length === 0) return
 
-    const rawPokemon: IFinalPokemonRawData = (await axios.get(baseRoute + query)).data
-    const handledPokemonArr = await setFinalPokemonData([rawPokemon])
+    try {
+      const rawPokemon: IFinalPokemonRawData = (await axios.get(baseRoute + query)).data
+      const handledPokemonArr = await setFinalPokemonData([rawPokemon])
+      const finalPokemonArr = await Promise.all(handledPokemonArr)
+      setPokemonList([])
+      setPokemonList(finalPokemonArr)
+      setQuery('')
+    } catch (error) {
+      window.alert("Falha na busca, por favor insira um nome ou ID referente a um pokémon.")
+    }
 
-    const finalPokemonArr = await Promise.all(handledPokemonArr)
-    setPokemonList([])
-    setPokemonList(finalPokemonArr)
-    setQuery('')
+
   }
 
   const pokeCardsData = pokemonsList.map((pokemon) => {
@@ -54,10 +59,8 @@ export function Main(props: mainProps) {
   return (
     <main className={style.main}>
       <form className={style.form} onSubmit={(event) => getPokemonByNameOrId(query, event)}>
-        <input type="text" value={query} onChange={(event) => {
-          setQuery(event.target.value.trim())
-          console.log(query)
-        }} className={style.formInput} placeholder="Nome ou o ID do pokemon" />
+        <input type="text" value={query} onChange={(event) => setQuery(event.target.value.trim().toLowerCase())
+        } className={style.formInput} placeholder="Nome ou o ID do pokemon" />
         <input type="submit" className={style.formButton} value="Buscar" />
       </form>
       <a className={style.getAllBtn} onClick={() => setPokemonList([])}>Buscar todos</a>

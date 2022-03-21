@@ -12,9 +12,9 @@ export function Footer() {
         <h2>Pokédex by Pedro Barboza</h2>
         <h3>Follow on the social medias</h3>
         <ul className={style.contactList}>
-          <li>Github: <a href="#">@PeterBarboza</a></li>
-          <li>Linkedin: <a href="#">@Pedro Barboza</a></li>
-          <li>Instagram: <a href="#">@pedro.m.barboza</a></li>
+          <li>Github: <a href="https://github.com/PeterBarboza" target="_blank" rel="noreferrer">@PeterBarboza</a></li>
+          <li>Linkedin: <a href="https://www.linkedin.com/in/pedro-barboza-webdev/" target="_blank" rel="noreferrer">@Pedro Barboza</a></li>
+          <li>Instagram: <a href="https://www.instagram.com/pedro.m.barboza/" target="_blank" rel="noreferrer">@pedro.m.barboza</a></li>
           <li>My portfolio: comming soon...</li>
         </ul>
       </div>
