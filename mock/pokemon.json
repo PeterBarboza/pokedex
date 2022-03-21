@@ -1,6 +1,6 @@
 {
   "name": "Example",
-  "id": "150",
+  "id": 150,
   "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
   "type1": "bug",
   "type2": "electric",

@@ -1,0 +1,24 @@
+.getMoreBtn {
+  transition-duration: 0.3s;
+
+  min-width: 120px;
+  width: 25%;
+  height: 40px;
+
+  color: #fff;
+  font-weight: 600;
+
+  background-color: #006eff;
+  cursor: pointer;
+
+  border: 0;
+  border-radius: 5px;
+  margin-bottom: 30px;
+
+  justify-self: center;
+  align-self: center;
+}
+.getMoreBtn:hover {
+  transition-duration: 0.3s;
+  filter: brightness(140%);
+}

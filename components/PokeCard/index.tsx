@@ -1,9 +1,8 @@
-import Image from 'next/image';
 import style from './style.module.css'
 
 type pokeCardProps = {
   name: string;
-  id: string;
+  id: number;
   img: string;
   typeColor1: string;
   typeColor2: string;

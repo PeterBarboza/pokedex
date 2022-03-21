@@ -1,0 +1,11 @@
+.MultiplyPokemonsBox {
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+}

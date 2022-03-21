@@ -3,6 +3,7 @@ import { Logo } from '../Logo'
 import logoPng from '../../public/pokemon-logo.png'
 import style from './style.module.css'
 
+//TODO: Colocar links das redes
 export function Footer() {
   return (
     <footer className={style.footer}>

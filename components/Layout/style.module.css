@@ -4,7 +4,7 @@
   height: fit-content;
 
   display: grid;
-  grid-template-rows: 90px minmax(100vh, auto) 225px;
+  grid-template-rows: 90px minmax(100vh, auto) fit-content 225px;
 
   background-color: #f3f3f3;
 }

@@ -1,4 +1,8 @@
-export function setPokemonTypeColor(type: string): string {
+export function setPokemonTypeColor(type: string | undefined): string {
+  if (!type) {
+    return "#fff"
+  }
+
   switch (type) {
     case "bug":
       return "#AFBF43"
