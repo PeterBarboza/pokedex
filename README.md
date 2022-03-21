@@ -2,7 +2,7 @@
 
 Inspirado na Pokédex, a intenção desse projeto era praticar minhas habilidades com Next.js e Typescript, o framework usado para desenvolve-lo. Nessa aplicação você pode conferir todos os pokémons existentes juntos de seus status de batalha pesquisando por seus nomes ou id's, ou apenas rolando a página e descobrindo novos pokémons. A aplicação também conta com design responsivo.
 
-Você pode ve-la em funcionamento <a href="https://pokedex-self.vercel.app">Clicando aqui</a>.
+Você pode ve-la em funcionamento <a href="https://pokedex-self.vercel.app" target="_blank" rel="noreferrer">Clicando aqui</a>.
 
 ## Tecnologias
 - React
