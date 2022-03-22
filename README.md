@@ -10,16 +10,6 @@ Você pode ve-la em funcionamento <a href="https://pokedex-self.vercel.app" targ
 - Typescript
 - Axios
 
-## Screenshots
-
-![](https://raw.githubusercontent.com/PeterBarboza/project-images-repository/main/pokedex/home-pokedex.png)
-
-![](https://raw.githubusercontent.com/PeterBarboza/project-images-repository/main/pokedex/pikachu-pokedex.png)
-
-![](https://raw.githubusercontent.com/PeterBarboza/project-images-repository/main/pokedex/footer-pokedex.png)
-
-![](https://raw.githubusercontent.com/PeterBarboza/project-images-repository/main/pokedex/mobile-pokedex.png)
-
 ## Como rodar
 
 É nescessário ter o git e o npm/yarn instalado na sua máquina.
